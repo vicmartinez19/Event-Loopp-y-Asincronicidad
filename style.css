@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4ede4;
+  color: #3e2723;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #4e342e;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #795548;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #efebe9;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: #6d4c41;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  background-color: #5d4037;
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.stats-bar {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  color: #5d4037;
+}
+
+.orders-section h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #3e2723;
+}
+
+.order-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #d7ccc8;
+  background-color: #fafafa;
+  transition: all 0.3s ease;
+}
+
+.order-item.en-proceso {
+  border-left: 6px solid #ff9800;
+  background-color: #fff8e1;
+}
+
+.order-item.completado {
+  border-left: 6px solid #4caf50;
+  background-color: #e8f5e9;
+}
+
+.order-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.order-title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.order-detail {
+  font-size: 0.85rem;
+  color: #616161;
+}
+
+.badge {
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.badge.en-proceso {
+  background-color: #ffe082;
+  color: #e65100;
+}
+
+.badge.completado {
+  background-color: #c8e6c9;
+  color: #1b5e20;
+}
